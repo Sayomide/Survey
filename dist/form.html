@@ -8,10 +8,284 @@
   <title>Form Page</title>
 </head>
 <body class="bg-blue-200">
-<h1 class="text-2xl text-center my-2"> This is a FORM PAGE kindly fill it </h1>
-<form action="" class="flex w-full ">
-  <label for="email">Email:</label>
-  <input type="email" id="input" placeholder="Click to enter your email..." class="appearance-none bg-transparent border-none m-0 p-0 focus:outline-none"/>
-</form>
+<div class="bg-white m-0 p-0 h-52">
+  <h1 class="text-2xl text-center mb-5 font-bold md:text-5xl"> FORM PAGE </h1>
+  <h2 class="text-2xl m-2 md:text-3xl">Form title: <span class="text-lg md:text-2xl"> General survey for every category</span></h2>
+  <hr>
+  <form action="" class="flex w-full">
+  <label for="email" class="m-2 text-2xl">Email:</label>
+  <input type="email" id="input" placeholder="Click to enter your email..." class="w-full appearance-none bg-transparent border-none focus:outline-none"/>
+  </form>
+  <hr>
+  <h3 class="text-red-500 m-2"> * Indicates required question </h3>
+</div>
+<br>
+<div class="flex flex-col justify-center items-center w-full">
+  
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> What is your gender? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="male" name="gender">
+      <label for="male"> Male </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="female" class="m-2" name="gender">
+      <label for="female"> Female </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> How old are you? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="f-age" name="age">
+      <label for="f-age"> 0 - 17 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="s-age" class="m-2" name="age">
+      <label for="s-age"> 18 - 30 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="t-age" class="m-2" name="age">
+      <label for="s-age"> 31 - 50 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="f-age" class="m-2" name="age">
+      <label for="s-age"> 51 - 80 </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Categorize your tertiary institution? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="federal" name="school">
+     <label for="federal">Federal institution</label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="state" class="m-2" name="school">
+      <label for="state">State Institution</label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="community" class="m-2" name="school">
+      <label for="community"> Community </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="private" class="m-2" name="school">
+      <label for="private"> Private or Sole </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="none" class="m-2" name="school">
+      <label for="none"> Not yet </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Are you still in school or a graduate? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="graduate" name="stillinschool">
+      <label for="f-age"> I'm now a graduate </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="student" class="m-2" name="stillinschool">
+      <label for="student"> Still a Student </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Highest Level of qualification? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="primary" name="levelofedu">
+      <label for="primary"> PSLC </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="secondary" class="m-2" name="levelofedu">
+    <label for="secondary">WAEC or Equivalent</label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="tertiaryone" class="m-2" name="levelofedu">
+     <label for="tertiary">OND or equivalent </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="tertiarytwo" class="m-2" name="levelofedu">
+      <label for="tertiary"> HND/BSC </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Which one do you love most? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="engineering" name="scopeofstudy">
+      <label for="engineering"> Engineering </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="science" class="m-2" name="scopeofstudy">
+      <label for="science"> Science </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="commercial" class="m-2" name="scopeofstudy">
+      <label for="commercial"> Commercial </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="communicaiton" class="m-2" name="scopeofstudy">
+      <label for="communication"> Communication </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que">Do you have any business idea now?
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="yesidea" name="idea">
+      <label for="yes"> Yes </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="noidea" class="m-2" name="idea">
+      <label for="no"> No </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="onidea" class="m-2" name="idea">
+      <label for="onit"> Working on it </label>
+    </div>
+  </div>
+</div>
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Which continent will you like to visit? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="southamerica" name="continent">
+      <label for="southamerica"> South America </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="northamerica" class="m-2" name="continent">
+      <label for="northamerica"> North America </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="africa" class="m-2" name="continent">
+      <label for="africa"> Africa </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="asia" class="m-2" name="continent">
+      <label for="asia"> Asia </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="europe" class="m-2" name="continent">
+      <label for="europe"> Europe </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="australia" class="m-2" name="continent">
+      <label for="australia"> Australia </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="antartica" class="m-2" name="continent">
+      <label for="antartica"> Antartica </label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Which state are you now? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="f-age" name="age">
+      <label for="f-age"> 0 - 17 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="s-age" class="m-2" name="age">
+      <label for="s-age"> 18 - 30 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="t-age" class="m-2" name="age">
+      <label for="s-age"> 31 - 50 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="f-age" class="m-2" name="age">
+      <label for="s-age"> 51 - 80 </label>
+    </div>
+  </div>
+</div>
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> Which state do you serve? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="f-age" name="age">
+      <label for="f-age"> 0 - 17 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="s-age" class="m-2" name="age">
+      <label for="s-age"> 18 - 30 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="t-age" class="m-2" name="age">
+      <label for="s-age"> 31 - 50 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="f-age" class="m-2" name="age">
+      <label for="s-age"> 51 - 80 </label>
+    </div>
+  </div>
+</div>
+<div id="questions" class="flex flex-col gap-7 text-lg bg-white w-[90%] m-3 rounded p-5 md:text-3xl">
+  <div class="que"> How old are you? 
+    <span class="text-red-500"> * </span> 
+  </div>
+  <div id="answers" class="flex flex-col justify-center">
+    <div class="mb-5 flex items-center">
+      <input type="radio" class="m-2" id="f-age" name="age">
+      <label for="f-age"> 0 - 17 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="s-age" class="m-2" name="age">
+      <label for="s-age"> 18 - 30 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="t-age" class="m-2" name="age">
+      <label for="s-age"> 31 - 50 </label>
+    </div>
+    <div class="mb-5 flex items-center">
+      <input type="radio" id="f-age" class="m-2" name="age">
+      <label for="s-age"> 51 - 80 </label>
+    </div>
+  </div>
+</div>
+
+
+</div>
 </body>
 </html>
